@@ -11,7 +11,7 @@ module.exports = {
   aliases: ["ue"],
   cooldown: 5,
   edesc: "With that you can see how long the Bot has been running nonstop",
-  execute(message, args, client) {
+  execute(message, args, uptime.js) {
     let days = Math.floor(client.uptime / 86400000);
     let hours = Math.floor(client.uptime / 3600000) % 24;
     let minutes = Math.floor(client.uptime / 60000) % 60;
